@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-sp-filepicker-sample-client-side-solution",
+    "id": "f0cd0f6c-5016-4593-8a7c-a4175b1a11ce",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-sp-filepicker-sample description"
+      },
+      "longDescription": {
+        "default": "spfx-sp-filepicker-sample description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-sp-filepicker-sample Feature",
+        "description": "The feature that activates elements of the spfx-sp-filepicker-sample solution.",
+        "id": "bb3688a4-abdf-4c62-b91e-55ec6da890ba",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-sp-filepicker-sample.sppkg"
+  }
+}

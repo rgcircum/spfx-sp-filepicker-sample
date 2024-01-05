@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-sp-file-picker-sample-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxSpFilePickerSample/SpfxSpFilePickerSampleWebPart.js",
+          "manifest": "./src/webparts/spfxSpFilePickerSample/SpfxSpFilePickerSampleWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxSpFilePickerSampleWebPartStrings": "lib/webparts/spfxSpFilePickerSample/loc/{locale}.js"
+  }
+}

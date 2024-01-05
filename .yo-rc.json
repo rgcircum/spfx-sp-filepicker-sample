@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.17.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "spfx-sp-filepicker-sample",
+    "libraryId": "f0cd0f6c-5016-4593-8a7c-a4175b1a11ce",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "spfx-sp-filepicker-sample",
+    "solutionShortDescription": "spfx-sp-filepicker-sample description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
