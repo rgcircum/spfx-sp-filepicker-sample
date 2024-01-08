@@ -22,7 +22,7 @@ export interface IFilePickerService {
     getWebAbsoluteUrl(): string;
 }
 
-const EXP_SOURCE: string = 'SpfxSpFilePickerSampleWebPart::PickerService';
+const EXP_SOURCE: string = 'SpfxSpFilePickerSampleWebPart::FilePickerService';
 
 export default class FilePickerService implements IFilePickerService {
 

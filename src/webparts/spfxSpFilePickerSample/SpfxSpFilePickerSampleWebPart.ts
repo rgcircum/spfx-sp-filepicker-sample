@@ -1,13 +1,20 @@
+// React
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
+
+// SPFx
 import { Version } from '@microsoft/sp-core-library';
 import { type IPropertyPaneConfiguration } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme, ThemeChangedEventArgs, ThemeProvider } from '@microsoft/sp-component-base';
+
+// Fluent UI
+import { ITheme } from '@fluentui/react/lib/Styling';
+
+// Components
 import SpfxSpFilePickerSample from './components/SpfxSpFilePickerSample';
 import { ISpfxSpFilePickerSampleProps } from './components/ISpfxSpFilePickerSampleProps';
 import { SPItem } from '../../Models/IFilePicker';
-import { ITheme } from '@fluentui/react/lib/Styling';
 
 export interface ISpfxSpFilePickerSampleWebPartProps {
   pickData: SPItem[]
@@ -25,14 +32,9 @@ export default class SpfxSpFilePickerSampleWebPart extends BaseClientSideWebPart
     this.context.serviceScope.whenFinished(() => {
 
       // Theme
-      this._themeProvider = this.context.serviceScope.consume(
-        ThemeProvider.serviceKey
-      );
+      this._themeProvider = this.context.serviceScope.consume(ThemeProvider.serviceKey);
       this._themeVariant = this._themeProvider.tryGetTheme();
-      this._themeProvider.themeChangedEvent.add(
-        this,
-        this._handleThemeChangedEvent
-      );
+      this._themeProvider.themeChangedEvent.add(this, this._handleThemeChangedEvent);
     });
 
     return Promise.resolve();
