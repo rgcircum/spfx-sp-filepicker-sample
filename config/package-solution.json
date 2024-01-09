@@ -25,6 +25,44 @@
       "videoUrl": "",
       "categories": []
     },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "AllSites.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "MyFiles.Read"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "AllSites.Write"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "MyFiles.Write"
+      },
+      {
+        "resource": "Windows Azure Active Directory",
+        "scope": "User.Read"
+      }
+    ],
     "features": [
       {
         "title": "spfx-sp-filepicker-sample Feature",
